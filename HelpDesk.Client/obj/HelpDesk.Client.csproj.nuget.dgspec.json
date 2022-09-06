@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\HelpDesk\\HelpDesk.Client\\HelpDesk.Client.csproj": {}
+    "C:\\Users\\karol\\Desktop\\Helpdesk\\HelpDesk\\HelpDesk.Client\\HelpDesk.Client.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\HelpDesk\\HelpDesk.Client\\HelpDesk.Client.csproj": {
+    "C:\\Users\\karol\\Desktop\\Helpdesk\\HelpDesk\\HelpDesk.Client\\HelpDesk.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\HelpDesk\\HelpDesk.Client\\HelpDesk.Client.csproj",
+        "projectUniqueName": "C:\\Users\\karol\\Desktop\\Helpdesk\\HelpDesk\\HelpDesk.Client\\HelpDesk.Client.csproj",
         "projectName": "HelpDesk.Client",
-        "projectPath": "D:\\GitHub\\HelpDesk\\HelpDesk.Client\\HelpDesk.Client.csproj",
-        "packagesPath": "C:\\Users\\madej\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\HelpDesk\\HelpDesk.Client\\obj\\",
+        "projectPath": "C:\\Users\\karol\\Desktop\\Helpdesk\\HelpDesk\\HelpDesk.Client\\HelpDesk.Client.csproj",
+        "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\karol\\Desktop\\Helpdesk\\HelpDesk\\HelpDesk.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\madej\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
