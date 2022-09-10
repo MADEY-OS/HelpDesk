@@ -10,7 +10,7 @@ main[b-ox9mdkx1bp] {
 }
 
 .sidebar[b-ox9mdkx1bp] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(320deg, rgb(163,76,192) 5%, #744dee 65%);
 }
 
 .top-row[b-ox9mdkx1bp] {
@@ -57,7 +57,7 @@ main[b-ox9mdkx1bp] {
     }
 
     .sidebar[b-ox9mdkx1bp] {
-        width: 250px;
+        width: 252px;
         height: 100vh;
         position: sticky;
         top: 0;

@@ -1,18 +1,55 @@
 ﻿@page "/counter"
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>Moje zgłoszenia</PageTitle>
 
-<h1>Counter</h1>
+<link href="css/ticket.css" rel="stylesheet" type="text/css" />
+<h1 class="daneh1">TWOJE ZGŁOSZENIA</h1>
 
-<p role="status">Current count: @currentCount</p>
+<div class="section">
+    <div class="zgloszenie">
+        <h2 class="ticket">ZGŁOSZENIE 1</h2>
+        <p>tutaj znajduje się treść zgłoszenia</p>
+    </div>
+</div>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<div class="section">
+    <div class="zgloszenie">
+        <h2 class="ticket">ZGŁOSZENIE 2</h2>
+        <p>tutaj znajduje się treść zgłoszenia</p>
+    </div>
+</div>
 
-@code {
-    private int currentCount = 0;
+<div class="section">
+    <div class="zgloszenie">
+        <h2 class="ticket">ZGŁOSZENIE 3</h2>
+        <p>tutaj znajduje się treść zgłoszenia</p>
+    </div>
+</div>
 
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}
+<div class="section">
+    <div class="zgloszenie">
+        <h2 class="ticket">ZGŁOSZENIE 4</h2>
+        <p>tutaj znajduje się treść zgłoszenia</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="zgloszenie">
+        <h2 class="ticket">ZGŁOSZENIE 5</h2>
+        <p>tutaj znajduje się treść zgłoszenia</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="zgloszenie">
+        <h2 class="ticket">ZGŁOSZENIE 6</h2>
+        <p>tutaj znajduje się treść zgłoszenia</p>
+    </div>
+</div>
+
+
+
+
+<div class="wave">
+    <img src="wave.png" />
+</div>

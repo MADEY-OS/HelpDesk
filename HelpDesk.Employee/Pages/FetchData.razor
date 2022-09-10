@@ -1,38 +1,42 @@
 ﻿@page "/account"
 @inject HttpClient Http
 
-<PageTitle>Weather forecast</PageTitle>
-
-<h1 class="text-center">Twoje konto</h1>
+<PageTitle>Moje konto</PageTitle>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<h1 class="dane">DANE KONTA</h1>
 
 <form>
     <div class="text-center">
-        <p>Imię</p>
-        <input type="text" placeholder="Halyna" >
+        <h2 class="daneh2">IMIĘ</h2>
+        <input class="wpisz" type="text" placeholder="Halyna">
         <br />
     </div>
     <div class="text-center">
         <br />
-        <p>Nazwisko</p>
-        <input type="text" placeholder="Kowalska" >
+        <h2 class="daneh2">NAZWISKO</h2>
+        <input class="wpisz" type="text" placeholder="Kowalska">
         <br />
     </div>
     <div class="text-center">
         <br />
-        <p>Dział</p>
-        <input type="text" placeholder="HR" >
+        <h2 class="daneh2">DZIAŁ</h2>
+        <input class="wpisz" type="text" placeholder="HR">
         <br />
     </div>
     <div class="text-center">
         <br />
-        <p>E-mail</p>
-        <input type="text" placeholder="Halyna@gmail.com" >
+        <h2 class="daneh2">E-MAIL</h2>
+        <input class="wpisz" type="text" placeholder="Halyna@gmail.com">
         <br />
     </div>
     <div class="text-center">
         <br />
-        <p>Kontakt</p>
-        <input type="text"placeholder="666 666 666">
+        <h2 class="daneh2">KONTAKT</h2>
+        <input class="wpisz" type="text" placeholder="666 666 666">
         <br />
     </div>
 </form>
+
+<div class="wave">
+    <img src="wave.png" />
+</div>
