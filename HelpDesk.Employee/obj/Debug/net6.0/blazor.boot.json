@@ -196,13 +196,13 @@
       "mscorlib.dll": "sha256-TYLzIm125RbnX9+RAPqJnwZhd6CnQpJcrjiMpJfZ720=",
       "netstandard.dll": "sha256-HhuK9zDkd1N7hODAEiNJ11VF8T54IgrM6hZfLHmHdqM=",
       "System.Private.CoreLib.dll": "sha256-dXaTqyg1PnXPiSwywpic1PVrd7P8Vb5tN0i0\/urdt3E=",
-      "HelpDesk.Employee.dll": "sha256-A1jBj\/FDCKMcC7UK\/SIoljQMXzew3wxnZSaFiWAJckU="
+      "HelpDesk.Employee.dll": "sha256-AjRdtazP2d9\/zbHhvWmE1DngY9EiTSXZ7F3RmYF7rIk="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "HelpDesk.Employee.pdb": "sha256-VC9t5Z2Jkn4g1bzvmU0xUu2pyrgi1YryiEkF0ufCYQg="
+      "HelpDesk.Employee.pdb": "sha256-AaheYGvbgxn4f1LNnWUCrK2XW9QHhf10sfKS7Eq2snI="
     },
     "runtime": {
       "dotnet.6.0.8.nl9o2m3kkd.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",
