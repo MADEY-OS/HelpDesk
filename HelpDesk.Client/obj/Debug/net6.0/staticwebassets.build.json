@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iuTbPJcc4z4QsXIum9fIOhOwfKbFthe/tD4QKGQGm6w=",
+  "Hash": "qHamcvVmcVaAgcnuM6Mcx8NkW1/5CT9yPmfyCPCgfWU=",
   "Source": "HelpDesk.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7155,6 +7155,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\asiat\\Documents\\GitHub\\HelpDesk\\HelpDesk.Client\\wwwroot\\css\\clients.css",
+      "SourceId": "HelpDesk.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asiat\\Documents\\GitHub\\HelpDesk\\HelpDesk.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/clients.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\clients.css"
     },
     {
       "Identity": "C:\\Users\\asiat\\Documents\\GitHub\\HelpDesk\\HelpDesk.Client\\wwwroot\\css\\clientticket.css",

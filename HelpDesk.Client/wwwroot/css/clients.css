@@ -1,0 +1,29 @@
+﻿
+h1 {
+    color: #424242;
+    font-size: 28px;
+    margin: 2px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1%;
+}
+
+    .table td, th {
+        font-size: 14px;
+        border-top: 1px solid #ddd;
+        padding: 5px 12px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .table tbody tr:nth-child(even) td {
+        background-color: #f3f3f3;
+    }
