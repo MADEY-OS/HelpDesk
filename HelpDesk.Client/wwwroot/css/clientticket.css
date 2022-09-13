@@ -1,0 +1,56 @@
+﻿
+h1 {
+    color: #424242;
+    font-size: 28px;
+    margin: 2px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.daneh1 {
+    background-color: #E5E5E5;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.section {
+    width: auto;
+    height: auto;
+}
+
+.zgloszenie {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80px;
+    background-color: #e5e5e5;
+    border-radius: 15px;
+}
+
+    .zgloszenie:hover {
+        background-color: #f7f7f7;
+        opacity: 0.5;
+        border-radius: 15px;
+        border-color: rebeccapurple;
+        border-width: 2px;
+        color: black;
+    }
+
+    .zgloszenie:active {
+        background-color: #744dee;
+        opacity: 0.5;
+    }
+
+h2 {
+    color: black;
+    font-size: 14px;
+    width: 100%;
+}
+
+.ticket {
+    margin-left: 20px;
+    color: black;
+}
