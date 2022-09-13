@@ -16,66 +16,25 @@ h1 {
     border-radius: 20px;
 }
 
-.section {
-    height: 25%;
-}
-
-.zgloszenie {
+.table {
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1%;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #e5e5e5;
-    border-radius: 15px;
-    width: auto;
-    height: auto;
 }
 
-h2 {
-    color: black;
+}
+
+.table td, th {
     font-size: 14px;
-    width: 100%;
+    border-top: 1px solid rebeccapurple;
+    padding: 5px 12px;
+    text-align: left;
+    vertical-align: top;
 }
 
-.device {
-    margin-left: 20px;
-    color: black;
-}
-
-.device1 {
-    margin-left: 20px;
-    color: black;
-}
-
-.p {
-    float: left;
-    width: 20%;
-    font-size: 5px;
-}
-
-.nazwa {
-    float: left;
-    width: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 1%;
-    margin-bottom: 5%;
-}
-
-.nazwa1 {
-    float: left;
-    width: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 1%;
-}
-
-.nazwa2 {
-    float: left;
-    width: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 1%;
-}
-
-.dane {
-    width: 100%;
+.table tbody tr:nth-child(even) td {
+    background-color: #744dee;
 }
