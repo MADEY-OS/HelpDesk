@@ -71,3 +71,15 @@ h2 {
     padding-left: 20%;
     padding-right: 20%;
 }
+
+.buttonik {
+    color: #ffffff;
+    background-image: linear-gradient(15deg, rgb(163,76,192) 5%, #744dee 75%);
+    border-radius: 5px;
+    border-color: rebeccapurple;
+}
+
+button.buttonik:active {
+    outline: 5px solid rebeccapurple;
+    outline-color: rgba(116, 77, 238, 0.5);
+}
