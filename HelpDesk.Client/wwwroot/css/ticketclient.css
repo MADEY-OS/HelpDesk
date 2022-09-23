@@ -1,0 +1,85 @@
+﻿
+.section {
+    width: auto;
+    height: auto;
+}
+
+.zgloszenie {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80px;
+    background-color: #e5e5e5;
+    border-radius: 15px;
+}
+
+h2 {
+    color: black;
+    font-size: 14px;
+    width: 100%;
+}
+
+.ticket {
+    margin-left: 20px;
+    color: black;
+}
+
+.textArea {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    border-color: rebeccapurple;
+    border-style: solid;
+    border-width: 2px;
+    width: 80%;
+}
+
+
+.admin {
+    margin-top: 30px;
+    margin-left: 32%;
+    border-color: rebeccapurple;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.category {
+    margin-top: 30px;
+    margin-left: 32%;
+    border-color: rebeccapurple;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.priority {
+    margin-top: 30px;
+    margin-left: 32%;
+    border-color: rebeccapurple;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.wybory {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.buttonik {
+    color: #ffffff;
+    background-image: linear-gradient(15deg, rgb(163,76,192) 5%, #744dee 75%);
+    border-radius: 5px;
+    border-color: rebeccapurple;
+}
+
+button.buttonik:active {
+    outline: 5px solid rebeccapurple;
+    outline-color: rgba(116, 77, 238, 0.5);
+}

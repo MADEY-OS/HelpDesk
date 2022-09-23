@@ -1,0 +1,61 @@
+﻿@page "/ticket"
+<PageTitle>Proponowane rozwiązania</PageTitle>
+<link href="css/ticketclient.css" rel="stylesheet" type="text/css" />
+
+<a href=""><input type="button" value="Wróć" /></a>
+
+<div class="section">
+    <div class="zgloszenie">
+        <h2 class="ticket">ZGŁOSZENIE 1</h2>
+        <p>tutaj znajduje się treść zgłoszenia</p>
+    </div>
+</div>
+
+<form>
+    <div class="text-center">
+        <textarea class="textArea" name="textArea" rows="5" cols="120" placeholder="Rozwiązanie problemu"></textarea>
+    </div>
+</form>
+
+<div class="wybory">
+
+    <label for="admin">
+        <select class="admin" name="admin">
+            <option value="admin0"> --- </option>
+            <option value="admin1">Adam Kowalski</option>
+            <option value="admin2">Karol Nowak</option>
+            <option value="admin3">Agnieszka Wójcik</option>
+        </select>
+    </label>
+
+
+
+    <label for="category">
+        <select class="category" name="category">
+            <option value="category0"> --- </option>
+            <option value="category1"> Usterka sprzętowa </option>
+            <option value="category2"> Oprogramowanie </option>
+            <option value="category3"> Inne </option>
+        </select>
+    </label>
+
+
+
+    <label for="priority">
+        <select class="priority" name="category">
+            <option value="priority0"> --- </option>
+            <option value="priority1"> Priorytet </option>
+            <option value="priority2"> Pilne </option>
+            <option value="priority3"> Później </option>
+        </select>
+    </label>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<div class="text-center">
+    <button class="buttonik">Prześlij</button>
+
+</div>

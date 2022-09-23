@@ -1,0 +1,68 @@
+﻿
+.gg {
+    width: 269px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+    .gg > img {
+        display: block;
+        width: 100%;
+    }
+
+
+h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.logindane {
+    border-radius: 12px;
+    border-color: rebeccapurple;
+    border-width: 2px;
+    width: 250px;
+}
+
+.tick {
+    border-radius: 5px;
+    border-color: rebeccapurple;
+    border-width: 2.5px;
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+}
+
+
+.buttonik {
+    color: #ffffff;
+    background-image: linear-gradient(15deg, rgb(163,76,192) 5%, #744dee 75%);
+    border-radius: 5px;
+    border-color: rebeccapurple;
+}
+
+button.buttonik:active {
+    outline: 5px solid rebeccapurple;
+    outline-color: rgba(116, 77, 238, 0.5);
+}
+
+
+
+.wave {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+    .wave > img {
+        display: block;
+        position: absolute;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }

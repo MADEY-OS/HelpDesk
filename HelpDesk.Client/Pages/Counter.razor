@@ -1,18 +1,31 @@
 ﻿@page "/counter"
+<link href="css/clients.css" rel="stylesheet" type="text/css" />
+<PageTitle>Użytkownicy</PageTitle>
 
-<PageTitle>Counter</PageTitle>
+<h1>UŻYTKOWNICY</h1>
 
-<h1>Counter</h1>
+<table class="table">
+    <tbody>
+        <tr>
+            <td><strong>ID</strong></td>
+            <td><strong>IMIĘ</strong></td>
+            <td><strong>NAZWISKO</strong></td>
+            <td><strong>DZIAŁ</strong></td>
 
-<p role="status">Current count: @currentCount</p>
+        </tr>
+        <tr>
+            <td>#1234</td>
+            <td>HALYNA</td>
+            <td>ROMSKA</td>
+            <td>HR</td>
+        </tr>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+        <tr>
+            <td>#1235</td>
+            <td>GRAŻYNA</td>
+            <td>PINIONC</td>
+            <td>HR</td>
+        </tr>
+    </tbody>
 
-@code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}
+</table>
