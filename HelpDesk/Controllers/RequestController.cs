@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace HelpDesk.API.Controllers;
 
 [Route("api/request")]
+[ApiController]
 public class RequestController : ControllerBase
 {
     private readonly IRequestService _requestService;
@@ -33,7 +34,7 @@ public class RequestController : ControllerBase
     }
 
     [HttpPost] //POST - Dodawanie requesta
-    public ActionResult Create([FromBody] CreateRequestDto dto)
+    public async  Task<IActionResult> Create([FromBody] CreateRequestDto dto)
     {
         if (!ModelState.IsValid) return BadRequest(ModelState);
         var id = _requestService.Create(dto);

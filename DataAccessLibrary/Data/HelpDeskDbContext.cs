@@ -51,6 +51,10 @@ namespace DataAccessLibrary.Data
                 .WithMany(r => r.Users)
                 .OnDelete(DeleteBehavior.NoAction);
 
+            modelBuilder.Entity<User>().Property(u => u.RoleId).HasDefaultValue(5);
+            modelBuilder.Entity<Request>().Property(r => r.Date).HasDefaultValueSql("getdate()");
+            modelBuilder.Entity<Request>().Property(r => r.Status).HasDefaultValue("Nowe");
+
         }
     }
 }

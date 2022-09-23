@@ -1,0 +1,39 @@
+﻿@page "/account/{id:int}"
+@inject HttpClient Http
+@inject IUserService UserService
+
+<link href="css/ticket.css" rel="stylesheet" type="text/css"/>
+
+<PageTitle>Moje konto</PageTitle>
+
+
+<div class="container mt-5 w-75">
+    <h1 class="daneh1 mb-5 w-100 p-3">DANE KONTA</h1>
+    <h5 class="mt-5">Dane Logowania</h5>
+    <hr/>
+    <p>Login: @user.Login</p>
+    <p>Hasło: @user.Password</p>
+    
+    <h5 class="mt-5">Dane Personalne</h5>
+    <hr/>
+    <p>Imię: @user.Name</p>
+    <p>Nazwisko: @user.sName</p>
+    
+    <h5 class="mt-5">Dane Kontaktowe</h5>
+    <hr/>
+    <p>Email: @user.Email</p>
+    <p>Telefon: @user.Phone</p>
+</div>
+
+@code
+{
+    [Parameter]
+    public int Id { get; set; }
+
+    UserViewModel user = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await UserService.GetUser(Id);
+    }
+}

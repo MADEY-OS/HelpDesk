@@ -1,0 +1,50 @@
+﻿@page "/requests"
+@inject IRequestService RequestService
+
+<link href="css/ticket.css" rel="stylesheet" type="text/css"/>
+
+<PageTitle>Moje zgłoszenia</PageTitle>
+
+<div class="container mt-5 w-75">
+    <h1 class="daneh1 mb-5 w-100 p-3">TWOJE ZGŁOSZENIA</h1>
+    @if (requests.Count == 0)
+    {
+        <span>Wczytywanie zgłoszeń...</span>
+    }
+    else
+    {
+        @foreach (var request in requests)
+        {
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mt-1">@request.Title</h5>
+                    @request.Date
+                </div>
+                <div class="card-body">
+                    <p>@request.Description</p>
+
+                </div>
+                <div class="card-footer pt-3 pb-3">
+                    <b>@request.Status</b>
+                    @if (request.Status == "Zakonczone")
+                    {
+                        <br/>
+                        <hr/>
+                        @request.FixerOpinion
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code
+{
+    List<RequestsViewModel> requests = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        requests = await RequestService.GetRequests();
+        requests.Reverse();
+    }
+}

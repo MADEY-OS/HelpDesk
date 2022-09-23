@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace HelpDesk.API.Controllers
 {
     [Route("api/user")]
+    [ApiController]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -15,7 +16,7 @@ namespace HelpDesk.API.Controllers
         }
 
         [HttpGet] //GET ALL - Pobieranie wszystkich użytkowników
-        public ActionResult<IEnumerable<UserDto>> GetAll()
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetAll()
         {
             var users = _userService.GetAll();
 
@@ -23,7 +24,7 @@ namespace HelpDesk.API.Controllers
         }
 
         [HttpGet("{id}")] //GET - Pobranie pojedynczego użtkownika
-        public ActionResult<UserDto> GetById([FromRoute] int id)
+        public async Task<ActionResult<UserDto>> GetById([FromRoute] int id)
         {
             var user = _userService.GetById(id);
 

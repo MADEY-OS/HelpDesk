@@ -73,6 +73,9 @@ namespace DataAccessLibrary.Services
             user.Login = dto.Login;
             user.Password = dto.Password;
             user.Email = dto.Email;
+            user.Name = dto.Name;
+            user.sName = dto.sName;
+            user.Phone = dto.Phone;
             user.RoleId = dto.RoleId;
             user.BuildingId = dto.BuildingId;
 

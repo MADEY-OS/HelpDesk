@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace HelpDesk.API.Controllers;
 
 [Route("api/category")]
+[ApiController]
 public class CategoryController : ControllerBase
 {
     private readonly ICategoryService _categoryService;

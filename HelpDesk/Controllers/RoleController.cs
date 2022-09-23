@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace HelpDesk.API.Controllers
 {
     [Route("api/role")]
+    [ApiController]
     public class RoleController : ControllerBase
     {
         private readonly IRoleService _roleService;

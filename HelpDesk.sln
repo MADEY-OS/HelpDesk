@@ -10,6 +10,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Client", "HelpDesk.Client\HelpDesk.Client.csproj", "{F440C51C-1E36-403D-B12D-476F5CDDBA5B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Employee", "HelpDesk.Employee\HelpDesk.Employee.csproj", "{8071F83E-3F82-4B63-881D-ED933232F2F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C6A8FB4-59C5-46DD-93CC-EDC971C3C930} = {5C6A8FB4-59C5-46DD-93CC-EDC971C3C930}
+		{62BB5845-DA01-4870-8C4A-3A3B7E93B948} = {62BB5845-DA01-4870-8C4A-3A3B7E93B948}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

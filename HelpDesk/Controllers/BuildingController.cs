@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace HelpDesk.API.Controllers;
 
 [Route("api/building")]
+[ApiController]
 public class BuildingController : ControllerBase
 {
     private readonly IBuildingService _buildingService;

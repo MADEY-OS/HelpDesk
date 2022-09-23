@@ -67,7 +67,6 @@ public class RequestService : IRequestService
         request.Title = dto.Title;
         request.Description = dto.Description;
         request.Status = dto.Status;
-        request.Date = dto.Date;
         request.UserId = dto.UserId;
         request.CategoryId = dto.CategoryId;
         request.DeviceId = dto.DeviceId;

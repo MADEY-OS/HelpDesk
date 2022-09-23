@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace HelpDesk.API.Controllers
 {
     [Route("api/device")]
+    [ApiController]
     public class DeviceController : ControllerBase
     {
         private readonly IDeviceService _deviceService;
