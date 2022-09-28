@@ -1,4 +1,4 @@
 .HelpDesk/DesignTimeBuild/
 .vs/HelpDesk/FileContentIndex
-.HelpDesk.Client/obj/Debug/
-.HelpDesk.Employee/Client/obj/Debug/
+.Client/obj/Debug/
+.Employee/Client/obj/Debug/
