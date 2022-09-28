@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccessLibrary.Entities;
+﻿using DataAccessLibrary.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLibrary.Data
 {
     public class HelpDeskDbContext : DbContext
     {
-        private string _connectionString =  @"Server=LAPTOP-SUT4SAOT\SQLEXPRESS; Database = HelpDesk; Trusted_Connection=True;";
+        private string _connectionString = @"Server=DESKTOP-0PEPSF2\SQLEXPRESS; Database = HelpDesk; Trusted_Connection=True;";
         public DbSet<User> Users { get; set; }
         public DbSet<Building> Buildings { get; set; }
         public DbSet<Device> Devices { get; set; }

@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using HelpDesk.Employee.ViewModels
 @using HelpDesk.Employee.Models
+@inject NavigationManager NavigationManager
 @inject IRequestService RequestService
 
 <link href="css/problem.css" rel="stylesheet" type="text/css"/>
@@ -28,17 +29,32 @@
 
 @code
 {
-    readonly CreateRequestModel newRequest = new();
+    CreateRequestModel newRequest = new();
+    [Parameter]
+    public bool DisplayAlert { get; set; }
+
 
     async void CreateNewRequest()
     {
+        var request = new CreateRequestModel()
+            {
+                Title = newRequest.Title,
+                Description = newRequest.Description,
+                Status = "Nowe",
+                UserId = 2,
+                CategoryId = 2,
+                DeviceId = 2,
+                FixerId = 2,
+                FixerOpinion = "Ciekawe"
+            };
 
+            RequestService.CreateRequest(request);
 
-        Console.WriteLine(newRequest);
-
-        RequestService.CreateRequest(newRequest);
-
-
+            if(CreateNewRequest != null){
+                Console.WriteLine("wysłano zgłoszenie");
+            
+                NavigationManager.NavigateTo("Requests");
+            }
     }
 
 }

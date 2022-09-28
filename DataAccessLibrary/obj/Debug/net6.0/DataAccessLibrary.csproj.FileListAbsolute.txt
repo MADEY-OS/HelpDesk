@@ -12,3 +12,17 @@ D:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.pdb
 D:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\ref\DataAccessLibrary.dll
 D:\GitHub\HelpDesk\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.runtimeconfig.json
 D:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.genruntimeconfig.cache
+H:\GitHub\HelpDesk\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.deps.json
+H:\GitHub\HelpDesk\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.runtimeconfig.json
+H:\GitHub\HelpDesk\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.dll
+H:\GitHub\HelpDesk\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.pdb
+H:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.csproj.AssemblyReference.cache
+H:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+H:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.AssemblyInfoInputs.cache
+H:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.AssemblyInfo.cs
+H:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
+H:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.dll
+H:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\refint\DataAccessLibrary.dll
+H:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.pdb
+H:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.genruntimeconfig.cache
+H:\GitHub\HelpDesk\DataAccessLibrary\obj\Debug\net6.0\ref\DataAccessLibrary.dll

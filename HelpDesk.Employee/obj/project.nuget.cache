@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ucXhfsvZ6E/j4zlicpuZeHIh/iVIXbntajf+p5UsAUU5KrgxFzb97Gj9Oy8mDCojhDXnxToT7ROihBajJc5Jhw==",
+  "dgSpecHash": "dq9EnVKbh6yOUvTilu+rewL/KJUcCBgRYZ1aqUeDRjcn/Kxon+nCTzMUgjjZ3W+pvEOlPpJPQupSowLuEHIs6g==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\HelpDesk\\HelpDesk.Employee\\HelpDesk.Employee.csproj",
+  "projectFilePath": "H:\\GitHub\\HelpDesk\\HelpDesk.Employee\\HelpDesk.Employee.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\madej\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.7\\microsoft.aspnetcore.authorization.6.0.7.nupkg.sha512",
     "C:\\Users\\madej\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.7\\microsoft.aspnetcore.components.6.0.7.nupkg.sha512",
@@ -33,7 +33,7 @@
     "C:\\Users\\madej\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\madej\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\madej\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\madej\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.7\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.7.nupkg.sha512"
+    "C:\\Users\\madej\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.9\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.9.nupkg.sha512"
   ],
   "logs": []
 }

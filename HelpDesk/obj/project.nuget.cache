@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gr+HOsB0gToSu3KzE+ILZgMUnz1palz8z0NJWCVRQLudBhatlubgWZiF3ES2nejpgSSyAOneFtxZuLXV83yKLA==",
+  "dgSpecHash": "SrqaxCEAkHfoleaVV5PtLQzvjBmGfaY314LsrAsM890lw9rtPwMiLu87npGdrYhb8VEfBjK4k2ChTqanDP6xGA==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\HelpDesk\\HelpDesk\\HelpDesk.API.csproj",
+  "projectFilePath": "H:\\GitHub\\HelpDesk\\HelpDesk\\HelpDesk.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\madej\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\madej\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
