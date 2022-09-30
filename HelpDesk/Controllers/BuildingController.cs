@@ -15,7 +15,7 @@ public class BuildingController : ControllerBase
         _buildingService = buildingService;
     }
 
-   
+
     [HttpGet]    //GET ALL - Pobieranie wszystkich budynków.
     public ActionResult<IEnumerable<BuildingDto>> GetAll()
     {

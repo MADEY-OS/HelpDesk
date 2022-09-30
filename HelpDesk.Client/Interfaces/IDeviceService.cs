@@ -2,8 +2,8 @@
 
 namespace HelpDesk.Client.Interfaces
 {
-	public interface IDeviceService
-	{
-		Task<List<DevicesViewModel>> GetDevices();
-	}
+    public interface IDeviceService
+    {
+        Task<List<DevicesViewModel>> GetDevices();
+    }
 }
