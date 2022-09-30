@@ -8,8 +8,6 @@
 
 <div class="mt-5 p-5">
 	<h1 class="daneh1 mb-5 w-75 p-3">Lista zgłoszeń</h1>
-	<button>Dodaj kategorie</button>
-	<button>Dodaj budynek</button>
 	<hr>
 
 	<table class="table">
@@ -28,7 +26,7 @@
 			</thead>
 			<tbody>
 				@foreach(var request in requests){
-				<tr class="trhov" style="vertical-align: center; cursor: pointer;" @onclick="@(() => RequestDetails(request.Id))">
+				<tr style="vertical-align: center; cursor: pointer;" @onclick="@(() => RequestDetails(request.Id))">
 					<th scope="row">@request.Id</th>
 					<td>@request.Title</td>
 					<td>@request.Status</td>
@@ -50,6 +48,7 @@
 
 	protected override async Task OnInitializedAsync(){
 		requests = await RequestService.GetRequests();
+		requests.Reverse();
 	}
 
 	void RequestDetails(int id) 

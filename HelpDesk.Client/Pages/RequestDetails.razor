@@ -1,6 +1,7 @@
 ﻿@page "/request/{id:int}"
 @inject HttpClient Http
 @inject IRequestService RequestService
+@inject NavigationManager NavigationManager
 
 <link href="css/problem.css" rel="stylesheet" type="text/css" />
 
@@ -20,8 +21,6 @@
     <h5 class="mt-5">Dane Kontaktowe</h5>
     <hr/>
     <p>Użytkownik: @request.User</p>
-    <h5 class="mt-5">Działania</h5>
-    <hr />
 </div>
 
 @code

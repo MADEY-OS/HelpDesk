@@ -63,4 +63,8 @@ h2 {
         width: 100%;
     }
 
+  tbody > tr:hover{
+      background-color: #744dee;
+      color: white;
+  }
 

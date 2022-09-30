@@ -6,5 +6,6 @@ namespace HelpDesk.Client.Interfaces
     {
         Task<List<RequestsViewModel>> GetRequests();
         Task<RequestsViewModel> GetRequest(int id);
+        Task<int> DeleteRequest(int id);
     }
 }

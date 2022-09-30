@@ -22,5 +22,12 @@ namespace HelpDesk.Client.Services
         {
             return await _httpClient.GetFromJsonAsync<RequestsViewModel>($"api/request/{id}");
         }
+
+        public async Task<int> DeleteRequest(int id)
+        {
+            var result = await _httpClient.DeleteAsync($"api/request/{id}");
+            return id;
+
+        }
     }
 }

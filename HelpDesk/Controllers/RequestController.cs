@@ -55,7 +55,7 @@ public class RequestController : ControllerBase
     }
 
     [HttpDelete("{id}")] //DELETE - Usuwanie requesta.
-    public ActionResult Delete([FromRoute] int id)
+    public async Task<IActionResult> Delete([FromRoute] int id)
     {
         var isDeleted = _requestService.Delete(id);
 
