@@ -1,6 +1,5 @@
 ﻿using DataAccessLibrary.Data;
 using DataAccessLibrary.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLibrary.Seeders;
 
@@ -169,7 +168,7 @@ public class HelpDeskSeeder
         {
             new()
             {
-                Login = "Admin-a",
+                Login = "admin-a",
                 Password = "admin",
                 Email = "admin@helpdesk.com",
                 Name = "Administrator",
@@ -180,9 +179,9 @@ public class HelpDeskSeeder
             },
             new()
             {
-                Login = "Nowak-a",
+                Login = "nowak-a",
                 Password = "helpdesk2022",
-                Email = "andrzejNowak@gmail.com",
+                Email = "andrzejNowak@firma.com",
                 Name = "Andrzej",
                 sName = "Nowak",
                 Phone = "111 222 111",
@@ -191,9 +190,9 @@ public class HelpDeskSeeder
             },
             new()
             {
-                Login = "Milosz-j",
+                Login = "milosz-j",
                 Password = "helpdesk2022",
-                Email = "jadwigaMilosz@gmail.com",
+                Email = "jadwigaMilosz@firma.com",
                 Name = "Jadwiga",
                 sName = "Miłosz",
                 Phone = "111 121 333",
@@ -204,7 +203,7 @@ public class HelpDeskSeeder
             {
                 Login = "krzemien-s",
                 Password = "helpdesk2022",
-                Email = "sylwesterKrzemien@gmail.com",
+                Email = "sylwesterKrzemien@firma.com",
                 Name = "Sylwester",
                 sName = "Krzemień",
                 Phone = "123 131 114",
@@ -215,7 +214,7 @@ public class HelpDeskSeeder
             {
                 Login = "raczek-w",
                 Password = "helpdesk2022",
-                Email = "witoldRaczek@gmail.com",
+                Email = "witoldRaczek@firma.com",
                 Name = "Witold",
                 sName = "Raczek",
                 Phone = "444 332 123",
@@ -342,6 +341,6 @@ public class HelpDeskSeeder
             }
 
         };
-            return requests;
+        return requests;
     }
 }

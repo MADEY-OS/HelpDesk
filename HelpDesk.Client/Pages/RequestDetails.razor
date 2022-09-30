@@ -1,0 +1,43 @@
+﻿@page "/request/{id:int}"
+@inject HttpClient Http
+@inject IRequestService RequestService
+
+<link href="css/problem.css" rel="stylesheet" type="text/css" />
+
+<PageTitle>Zgłoszenie</PageTitle>
+
+
+<div class="container mt-5 w-75">
+    <h1 class="daneh1 mb-5 w-100 p-3">Szczegóły zgłoszenia</h1>
+    <h5 class="mt-5">Treść</h5>
+    <hr/>
+    <p>Tytuł: @request.Title</p>
+    <p>Kategoria: @request.Category</p>
+    <p>Opis: @request.Description</p>
+    <h5 class="mt-5">Dane techniczne</h5>
+    <hr/>
+    <p>Urządzenie: @request.Device</p>
+    <h5 class="mt-5">Dane Kontaktowe</h5>
+    <hr/>
+    <p>Użytkownik: @request.User</p>
+    <h5 class="mt-5">Działania</h5>
+    <hr />
+    <button class="btn buttonik mt-3 w-10">Usuń</button>
+    <button class="btn buttonik mt-3 w-10"> Zmień kategorie</button>
+    <button class="btn buttonik mt-3 w-10"> Edytuj</button>
+
+ 
+</div>
+
+@code
+{
+    [Parameter]
+    public int Id { get; set; }
+
+    RequestsViewModel request = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        request = await RequestService.GetRequest(Id);
+    }
+}

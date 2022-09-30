@@ -17,14 +17,14 @@ public class RequestController : ControllerBase
 
     //GET ALL - Pobieranie wszystkich requestów.
     [HttpGet]
-    public ActionResult<IEnumerable<RequestDto>> GetAll()
+    public ActionResult<IEnumerable<DetailedRequestDto>> GetAll()
     {
         var requestsDtos = _requestService.GetAll();
         return Ok(requestsDtos);
     }
 
     [HttpGet("{id}")] //GET - Pobranie pojedynczego requesta
-    public ActionResult<RequestDto> GetById([FromRoute] int id)
+    public ActionResult<DetailedRequestDto> GetById([FromRoute] int id)
     {
         var request = _requestService.GetById(id);
 
@@ -34,7 +34,7 @@ public class RequestController : ControllerBase
     }
 
     [HttpPost] //POST - Dodawanie requesta
-    public async  Task<IActionResult> Create([FromBody] CreateRequestDto dto)
+    public async Task<IActionResult> Create([FromBody] CreateRequestDto dto)
     {
         if (!ModelState.IsValid) return BadRequest(ModelState);
         var id = _requestService.Create(dto);

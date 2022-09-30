@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using DataAccessLibrary.Data;
 using DataAccessLibrary.Entities;
 using DataAccessLibrary.Interfaces;
 using DataAccessLibrary.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLibrary.Services
 {
@@ -33,11 +29,14 @@ namespace DataAccessLibrary.Services
             return result;
         }
 
-        public IEnumerable<UserDto> GetAll()
+        public IEnumerable<DetailedUserDto> GetAll()
         {
-            var users = _dbContext.Users.ToList();
+            var users = _dbContext.Users
+                .Include(b => b.Building)
+                .Include(r => r.Role)
+                .ToList();
 
-            var usersDto = _mapper.Map<List<UserDto>>(users);
+            var usersDto = _mapper.Map<List<DetailedUserDto>>(users);
 
             return usersDto;
         }
@@ -45,6 +44,9 @@ namespace DataAccessLibrary.Services
         public int Create(CreateUserDto dto)
         {
             var user = _mapper.Map<User>(dto);
+
+            user.Login = user.sName.ToLower() + "-" + user.Name.Substring(0, 1).ToLower();
+            user.Email = user.Name.ToLower() + user.sName + "@firma.com";
 
             _dbContext.Users.Add(user);
             _dbContext.SaveChanges();

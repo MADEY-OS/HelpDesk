@@ -16,7 +16,7 @@ namespace HelpDesk.API.Controllers
         }
 
         [HttpGet] //GET ALL - Pobieranie wszystkich użytkowników
-        public async Task<ActionResult<IEnumerable<UserDto>>> GetAll()
+        public async Task<ActionResult<IEnumerable<DetailedUserDto>>> GetAll()
         {
             var users = _userService.GetAll();
 

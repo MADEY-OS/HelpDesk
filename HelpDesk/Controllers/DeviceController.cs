@@ -1,9 +1,6 @@
-﻿using System.IO.Compression;
-using System.Runtime.InteropServices.ComTypes;
-using DataAccessLibrary.Interfaces;
+﻿using DataAccessLibrary.Interfaces;
 using DataAccessLibrary.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace HelpDesk.API.Controllers
 {
@@ -29,7 +26,7 @@ namespace HelpDesk.API.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<DeviceDto>> GetAll()
+        public ActionResult<IEnumerable<DetailedDeviceDto>> GetAll()
         {
             var devices = _deviceService.GetAll();
 
@@ -49,13 +46,13 @@ namespace HelpDesk.API.Controllers
         [HttpPut("{id}")]
         public ActionResult Update([FromBody] CreateDeviceDto dto, [FromRoute] int id)
         {
-            if(!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
             var isUpdated = _deviceService.Update(id, dto);
 
             if (!isUpdated) return NotFound();
 
-            return Ok();    
+            return Ok();
         }
 
         [HttpDelete("{id}")]
@@ -63,7 +60,7 @@ namespace HelpDesk.API.Controllers
         {
             var isDeleted = _deviceService.Delete(id);
 
-            if(isDeleted) return NotFound();
+            if (isDeleted) return NotFound();
 
             return Ok();
         }

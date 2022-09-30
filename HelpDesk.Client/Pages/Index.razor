@@ -1,13 +1,63 @@
 ﻿@page "/"
-<link href="css/clientticket.css" rel="stylesheet" type="text/css" />
+@inject IRequestService RequestService
+@inject NavigationManager NavigationManager
+
+<link href="css/ticket.css" rel="stylesheet" type="text/css"/>
+
 <PageTitle>Zgłoszenia</PageTitle>
 
-<h1>Przychodzące zgłoszenia</h1>
+<div class="mt-5 p-5">
+	<h1 class="daneh1 mb-5 w-75 p-3">Lista zgłoszeń</h1>
+	<button>Dodaj kategorie</button>
+	<button>Dodaj budynek</button>
+	<hr>
 
-<div class="section">
-    <div class="zgloszenie">
-        <h2 class="ticket">ZGŁOSZENIE 1</h2>
-        <p>tutaj znajduje się treść zgłoszenia</p>
-        <a href="ticket"><input type="button" value="Przejdź" /></a>
-    </div>
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Tytuł</th>
+				<th scope="col">Status</th>
+				<th scope="col">Data</th>
+				<th scope="col">Użytkownik</th>
+				<th scope="col">Kategoria</th>
+				<th scope="col">Urządzenie</th>
+				<th scope="col">Pomocnik</th>
+				<th scope="col">Opinia</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var request in requests){
+				<tr class="trhov" style="vertical-align: center; cursor: pointer;" @onclick="@(() => RequestDetails(request.Id))">
+					<th scope="row">@request.Id</th>
+					<td>@request.Title</td>
+					<td>@request.Status</td>
+					<td>@request.Date</td>
+					<td>@request.User</td>
+					<td>@request.Category</td>
+					<td>@request.Device</td>
+					<td>admin-a</td>
+					<td>@request.FixerOpinion</td>
+					</tr>
+				}
+			</tbody>
+
+		</table>
 </div>
+
+@code{
+	List<RequestsViewModel> requests = new();
+
+	protected override async Task OnInitializedAsync(){
+		requests = await RequestService.GetRequests();
+	}
+
+	void RequestDetails(int id) 
+	{
+		NavigationManager.NavigateTo("https://localhost:7272/request/" + id);
+	}
+}
+
+
+
+

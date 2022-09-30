@@ -3,6 +3,7 @@ using DataAccessLibrary.Data;
 using DataAccessLibrary.Entities;
 using DataAccessLibrary.Interfaces;
 using DataAccessLibrary.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLibrary.Services;
 
@@ -17,21 +18,29 @@ public class RequestService : IRequestService
         _mapper = mapper;
     }
 
-    public IEnumerable<RequestDto> GetAll()
+    public IEnumerable<DetailedRequestDto> GetAll()
     {
-        var requests = _dbContext.Requests.ToList();
-        var requestsDtos = _mapper.Map<List<RequestDto>>(requests);
+        var requests = _dbContext.Requests
+            .Include(u => u.User)
+            .Include(c => c.Category)
+            .Include(d => d.Device)
+            .ToList();
+        var requestsDtos = _mapper.Map<List<DetailedRequestDto>>(requests);
 
         return requestsDtos;
     }
 
-    public RequestDto GetById(int id)
+    public DetailedRequestDto GetById(int id)
     {
-        var request = _dbContext.Requests.FirstOrDefault(r => r.Id == id);
+        var request = _dbContext.Requests
+            .Include(u => u.User)
+            .Include(c => c.Category)
+            .Include(d => d.Device)
+            .FirstOrDefault(r => r.Id == id);
 
         if (request is null) return null;
 
-        var result = _mapper.Map<RequestDto>(request);
+        var result = _mapper.Map<DetailedRequestDto>(request);
 
         return result;
     }

@@ -20,5 +20,15 @@ public class HelpDeskMappingProfile : Profile
         CreateMap<Request, RequestDto>();
         CreateMap<Role, RoleDto>();
         CreateMap<User, UserDto>();
+        CreateMap<Request, DetailedRequestDto>()
+            .ForMember(dest => dest.User, opt => opt.MapFrom(src => src.User.Login))
+            .ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category.Name))
+            .ForMember(dest => dest.Device, opt => opt.MapFrom(src => src.Device.Brand + " " + src.Device.Model));
+        CreateMap<User, DetailedUserDto>()
+            .ForMember(dest => dest.Role, opt => opt.MapFrom(src => src.Role.Name))
+            .ForMember(dest => dest.Building, opt => opt.MapFrom(src => src.Building.Name));
+        CreateMap<Device, DetailedDeviceDto>()
+            .ForMember(dest => dest.User, opt => opt.MapFrom(src => src.User.Login))
+            .ForMember(dest => dest.Building, opt => opt.MapFrom(src => src.Building.Name));
     }
 }

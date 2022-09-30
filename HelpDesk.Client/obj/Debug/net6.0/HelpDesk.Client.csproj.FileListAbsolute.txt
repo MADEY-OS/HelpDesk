@@ -3258,9 +3258,13 @@ D:\GitHub\HelpDesk\HelpDesk.Client\obj\Debug\net6.0\HelpDesk.Client.dll
 D:\GitHub\HelpDesk\HelpDesk.Client\obj\Debug\net6.0\refint\HelpDesk.Client.dll
 D:\GitHub\HelpDesk\HelpDesk.Client\obj\Debug\net6.0\HelpDesk.Client.pdb
 D:\GitHub\HelpDesk\HelpDesk.Client\obj\Debug\net6.0\ref\HelpDesk.Client.dll
+H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js
+H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.9.y6tfih9irp.js
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.timezones.blat
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.wasm
+H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\HelpDesk.Client.dll
+H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\HelpDesk.Client.pdb
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\icudt.dat
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\icudt_CJK.dat
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\icudt_EFIGS.dat
@@ -3458,6 +3462,7 @@ H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Se
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Private.Xml.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.X509Certificates.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.CompilerServices.VisualC.dll.gz
+H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\HelpDesk.Client.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Claims.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Registry.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.WebAssembly.dll.gz
@@ -3540,6 +3545,7 @@ H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Re
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Intrinsics.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Private.Uri.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.dll.gz
+H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\HelpDesk.Client.pdb.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.ReaderWriter.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.CompilerServices.Unsafe.dll.gz
@@ -3651,12 +3657,6 @@ H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Li
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encodings.Web.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Primitives.dll.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\System.Drawing.Primitives.dll.gz
-H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
-H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.9.y6tfih9irp.js
-H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\HelpDesk.Client.dll
-H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\HelpDesk.Client.pdb
-H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\HelpDesk.Client.dll.gz
-H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\wwwroot\_framework\HelpDesk.Client.pdb.gz
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\HelpDesk.Client.staticwebassets.runtime.json
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\HelpDesk.Client.dll
 H:\GitHub\HelpDesk\HelpDesk.Client\bin\Debug\net6.0\HelpDesk.Client.pdb

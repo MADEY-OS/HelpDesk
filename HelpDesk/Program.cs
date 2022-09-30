@@ -1,10 +1,9 @@
-using System.Reflection;
 using DataAccessLibrary.Data;
-using DataAccessLibrary.Entities;
 using DataAccessLibrary.Interfaces;
 using DataAccessLibrary.Seeders;
 using DataAccessLibrary.Services;
 using Microsoft.Net.Http.Headers;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,6 +36,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors(policy => policy.WithOrigins("http://localhost:7262", "https://localhost:7262").AllowAnyMethod().WithHeaders(HeaderNames.ContentType));
+app.UseCors(policy => policy.WithOrigins("http://localhost:7272", "https://localhost:7272").AllowAnyMethod().WithHeaders(HeaderNames.ContentType));
 
 app.UseHttpsRedirection();
 

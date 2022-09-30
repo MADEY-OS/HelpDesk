@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using DataAccessLibrary.Data;
 using DataAccessLibrary.Entities;
 using DataAccessLibrary.Interfaces;
 using DataAccessLibrary.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLibrary.Services
 {
@@ -27,17 +23,20 @@ namespace DataAccessLibrary.Services
             var device = _dbContext.Devices.FirstOrDefault(d => d.Id == id);
 
             if (device is null) return null;
-            
+
             var result = _mapper.Map<DeviceDto>(device);
-            
+
             return result;
         }
 
-        public IEnumerable<DeviceDto> GetAll()
+        public IEnumerable<DetailedDeviceDto> GetAll()
         {
-            var devices = _dbContext.Devices.ToList();
+            var devices = _dbContext.Devices
+                .Include(b => b.Building)
+                .Include(u => u.User)
+                .ToList();
 
-            var devicesDto = _mapper.Map<List<DeviceDto>>(devices);
+            var devicesDto = _mapper.Map<List<DetailedDeviceDto>>(devices);
 
             return devicesDto;
         }
@@ -45,7 +44,7 @@ namespace DataAccessLibrary.Services
         public int Create(CreateDeviceDto dto)
         {
             var device = _mapper.Map<Device>(dto);
-            
+
             _dbContext.Devices.Add(device);
             _dbContext.SaveChanges();
 
@@ -55,8 +54,8 @@ namespace DataAccessLibrary.Services
         public bool Delete(int id)
         {
             var device = _dbContext.Devices.FirstOrDefault(d => d.Id == id);
-            
-            if(device is null) return false;
+
+            if (device is null) return false;
 
             _dbContext.Devices.Remove(device);
             _dbContext.SaveChanges();
@@ -68,7 +67,7 @@ namespace DataAccessLibrary.Services
         {
             var device = _dbContext.Devices.FirstOrDefault(d => d.Id == id);
 
-            if(device is null) return false;
+            if (device is null) return false;
 
             device.Brand = dto.Brand;
             device.Model = dto.Model;

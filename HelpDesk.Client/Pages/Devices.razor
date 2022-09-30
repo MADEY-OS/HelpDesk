@@ -1,0 +1,52 @@
+﻿@page "/devices"
+@inject IDeviceService DeviceService
+
+<link href="css/ticket.css" rel="stylesheet" type="text/css"/>
+
+<PageTitle>Urządzenia</PageTitle>
+
+<div class="mt-5 p-5">
+	<h1 class="daneh1 mb-5 w-75 p-3">Urządzenia</h1>
+	<input type="submit" id="AddDeviceButton" value="Dodaj urządzenie"/>	
+	<hr>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Marka</th>
+				<th scope="col">Model</th>
+				<th scope="col">Typ</th>
+				<th scope="col">Właściciel</th>
+				<th scope="col">Budynek</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var device in devices){
+				<tr style="cursor: pointer;">
+					<th scope="row">@device.Id</th>
+					<td>@device.Brand</td>
+					<td>@device.Model</td>
+					<td>@device.Type</td>
+					<td>@device.User</td>
+					<td>@device.Building</td>
+					</tr>
+				}
+			</tbody>
+
+		</table>
+</div>
+
+@code{
+	List<DevicesViewModel> devices = new();
+
+	protected override async Task OnInitializedAsync(){
+		devices = await DeviceService.GetDevices();
+	}
+
+
+}
+
+
+
+

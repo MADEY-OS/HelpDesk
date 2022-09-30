@@ -1,0 +1,56 @@
+﻿@page "/users"
+@inject IUserService UserService
+
+<link href="css/ticket.css" rel="stylesheet" type="text/css"/>
+
+<PageTitle>Użytkownicy</PageTitle>
+
+<div class="mt-5 p-5">
+	<h1 class="daneh1 mb-5 w-75 p-3">Użytkownicy</h1>
+	<input type="submit" id="AddDeviceButton" value="Dodaj użytkownika"/>	
+	<hr>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Login</th>
+				<th scope="col">Hasło</th>
+				<th scope="col">Email</th>
+				<th scope="col">Telefon</th>
+				<th scope="col">Imię</th>
+				<th scope="col">Nazwisko</th>
+				<th scope="col">Stanowisko</th>
+				<th scope="col">Budynek</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var user in users){
+				<tr>
+					<th scope="row">@user.Id</th>
+					<td>@user.Login</td>
+					<td>@user.Password</td>
+					<td>@user.Email</td>
+					<td>@user.Phone</td>
+					<td>@user.Name</td>
+					<td>@user.sName</td>
+					<td>@user.Role</td>
+					<td>@user.Building</td>
+					</tr>
+				}
+			</tbody>
+
+		</table>
+</div>
+
+@code{
+	List<UsersViewModel> users = new();
+
+	protected override async Task OnInitializedAsync(){
+		users = await UserService.GetUsers();
+	}
+}
+
+
+
+

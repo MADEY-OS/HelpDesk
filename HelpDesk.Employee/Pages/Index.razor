@@ -30,9 +30,6 @@
 @code
 {
     CreateRequestModel newRequest = new();
-    [Parameter]
-    public bool DisplayAlert { get; set; }
-
 
     async void CreateNewRequest()
     {
@@ -45,7 +42,7 @@
                 CategoryId = 2,
                 DeviceId = 2,
                 FixerId = 2,
-                FixerOpinion = "Ciekawe"
+                FixerOpinion = " "
             };
 
             RequestService.CreateRequest(request);
